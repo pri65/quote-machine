@@ -17,7 +17,12 @@ function App() {
 
     return (
         <div className="container pt-5">
-            
+            <div className="jumbotron">
+                <div className="card">
+                    <div className='card-header'>Inspirational Quotes</div>
+                    <div className='card-body'></div>
+                </div>
+            </div>
         </div>
     );
 }
