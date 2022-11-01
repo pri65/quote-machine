@@ -16,8 +16,8 @@ function App() {
      },[])
 
      const getNewQuote =() => {
-        let ranIndex = Math.floor(Math.random() * data.length);
-        setRandomQuote(data[ranIndex])
+        let ranIndex = Math.floor(Math.random() * quotes.length);
+        setRandomQuote(quotes[ranIndex])
      }
 
     return (
@@ -36,9 +36,9 @@ function App() {
                         )}
 
                         <div className="row">
-                            <button onClick={getNewQuote}></button>
-                            <a href=""></a>
-                            <a href=""></a>
+                            <button onClick={getNewQuote} className="btn btn-primary ml-3">New Quote</button>
+                            <a href="" className="btn btn-warning"></a>
+                            <a href="" className="btn btn-danger"></a>
                         </div>
                     </div>
                 </div>
