@@ -7,6 +7,9 @@ function App() {
        async function fetchData() {
         const response = await fetch("https://type.fit/api/quotes")
         const data = await response.json();
+
+        setQuotes(data);
+        let ranIndex = Math.floor(Math.random() * data.length)
        }
      },[])
 
