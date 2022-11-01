@@ -15,6 +15,11 @@ function App() {
        fetchData();
      },[])
 
+     const getNewQuote =() => {
+        let ranIndex = Math.floor(Math.random() * data.length);
+        setRandomQuote(data[ranIndex])
+     }
+
     return (
         <div className="container pt-5">
             <div className="jumbotron">
