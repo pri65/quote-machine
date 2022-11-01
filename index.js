@@ -29,6 +29,12 @@ function App() {
                         ) : (
                             <h2>Loading</h2>
                         )}
+
+                        <div className="row">
+                            <button onClick={getNewQuote}></button>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
