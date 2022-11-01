@@ -22,7 +22,9 @@ function App() {
                     <div className='card-header'>Inspirational Quotes</div>
                     <div className='card-body'>
                         {randomQuote ? (
-                            <></>
+                            <>
+                            <h5 className="card-title">- {randomQuote.author || "No author"}</h5>
+                            </>
                         ) : (
                             <h2>Loading</h2>
                         )}
