@@ -1,5 +1,7 @@
 function App() {
-    retrun (
+    return (
         <div>Hello World</div>
-    )
+    );
 }
+
+ReactDOM.render(<App />, document.getElementById("app"))
