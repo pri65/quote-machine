@@ -9,12 +9,18 @@ function App() {
         const data = await response.json();
 
         setQuotes(data);
-        let ranIndex = Math.floor(Math.random() * data.length)
+        let ranIndex = Math.floor(Math.random() * data.length);
+        setRandomQuotes(data[ranIndex])
        }
+       fetchData();
      },[])
 
     return (
-        <div>Hello World</div>
+        <div>
+            {quotes.map(quote => (
+                <div>{quote.text}</div>
+            ))}
+        </div>
     );
 }
 
