@@ -16,7 +16,7 @@ function App() {
      },[])
 
     return (
-        <div>
+        <div className="container pt-S">
             {quotes.map(quote => (
                 <div>{quote.text}</div>
             ))}
