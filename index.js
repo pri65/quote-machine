@@ -24,6 +24,7 @@ function App() {
                         {randomQuote ? (
                             <>
                             <h5 className="card-title">- {randomQuote.author || "No author"}</h5>
+                            <p className="card-text">&quot;{randomQuote.text}&quot;</p>
                             </>
                         ) : (
                             <h2>Loading</h2>
