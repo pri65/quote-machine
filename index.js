@@ -16,10 +16,8 @@ function App() {
      },[])
 
     return (
-        <div className="container pt-S">
-            {quotes.map(quote => (
-                <div>{quote.text}</div>
-            ))}
+        <div className="container pt-5">
+            
         </div>
     );
 }
