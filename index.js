@@ -1,7 +1,7 @@
 function App() {
 
     const [quotes,setQuotes] = React.useState([]);
-    const [randomQuotes,setRandomQuotes] = React.useState([]);
+    const [randomQuote,setRandomQuote] = React.useState("");
 
      React.useEffect(() => {
        async function fetchData() {
@@ -10,7 +10,7 @@ function App() {
 
         setQuotes(data);
         let ranIndex = Math.floor(Math.random() * data.length);
-        setRandomQuotes(data[ranIndex])
+        setRandomQuote(data[ranIndex])
        }
        fetchData();
      },[])
@@ -20,7 +20,13 @@ function App() {
             <div className="jumbotron">
                 <div className="card">
                     <div className='card-header'>Inspirational Quotes</div>
-                    <div className='card-body'></div>
+                    <div className='card-body'>
+                        {randomQuote ? (
+                            <></>
+                        ) : (
+                            <h2>Loading</h2>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>
