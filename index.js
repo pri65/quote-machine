@@ -40,8 +40,8 @@ function App() {
      }
 
     return (
-        <div>
-        <div className="container pt-5" style={{backgroundColor: color}}>
+        <div style={{backgroundColor: color, minHeight: "100vh"}}>
+        <div className="container pt-5" >
             <div className="jumbotron">
                 <div className="card">
                     <div className='card-header'>Inspirational Quotes</div>
