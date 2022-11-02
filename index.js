@@ -12,6 +12,7 @@ function App() {
         setQuotes(data);
         let ranIndex = Math.floor(Math.random() * data.length);
         setRandomQuote(data[ranIndex])
+        setColor(color[ranColorIndex ])
        }
        fetchData();
      },[])
@@ -39,7 +40,8 @@ function App() {
      }
 
     return (
-        <div className="container pt-5">
+        <div>
+        <div className="container pt-5" style={{backgroundColor: color}}>
             <div className="jumbotron">
                 <div className="card">
                     <div className='card-header'>Inspirational Quotes</div>
@@ -65,6 +67,7 @@ function App() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 }
