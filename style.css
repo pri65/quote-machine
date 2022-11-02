@@ -1,3 +1,39 @@
 * {
     transition: all 0.3s ease-in-out;
 }
+
+.container {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 500px;
+    height: 250px;
+    margin: auto;
+    background-color: white;
+}
+
+.card-header {
+    background-color: rgb(212, 198, 198);
+    height: 50px;  
+}
+.card-header p {
+ font-size: large;
+ padding: 10px;
+}
+.card-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.card-text {
+    margin-left: 10px;
+}
+.row {
+    display: flex;
+}
+.btn {
+    background-color: rgb(74, 74, 223);
+    color: white;
+    border-color: white;
+    padding: 10px;
+    border-radius: 7px;
+}

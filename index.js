@@ -41,10 +41,10 @@ function App() {
 
     return (
         <div style={{backgroundColor: color, minHeight: "100vh"}}>
-        <div className="container pt-5" >
+        <div className="container" >
             <div className="jumbotron">
                 <div className="card">
-                    <div className='card-header'>Inspirational Quotes</div>
+                    {/* <div className='card-header'><p>Inspirational Quotes</p></div> */}
                     <div className='card-body'>
                         {randomQuote ? (
                             <>
@@ -56,11 +56,11 @@ function App() {
                         )}
 
                         <div className="row">
-                            <button onClick={getNewQuote} className="btn btn-primary ml-3">New Quote</button>
-                            <a href="" className="btn btn-warning">
+                            <button onClick={getNewQuote} className="btn">New Quote</button>
+                            <a href="" className="btn2">
                                 <i className="fa fa-twitter"></i>
                             </a>
-                            <a href="" className="btn btn-danger">
+                            <a href="" className="btn3">
                                 <i className="fa fa-tumbler"></i>
                             </a>
                         </div>
