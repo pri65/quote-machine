@@ -16,7 +16,24 @@ function App() {
      },[])
 
      const getNewQuote =() => {
+     const colors = [
+        "#16a085",
+        "#27ae60",
+        "#2c3e50",
+        "#f39c12",
+        "#e74c3c",
+        "#9b59b6",
+        "#FB6964",
+        "#342224",
+        "#472E32",
+        "#BDBB99",
+        "#77B1A9",
+        "#73A857",
+     ];
+
+      
         let ranIndex = Math.floor(Math.random() * quotes.length);
+        let ranColorIndex = Math.floor(Math.random() * colors.length)
         setRandomQuote(quotes[ranIndex])
      }
 
@@ -37,8 +54,12 @@ function App() {
 
                         <div className="row">
                             <button onClick={getNewQuote} className="btn btn-primary ml-3">New Quote</button>
-                            <a href="" className="btn btn-warning"></a>
-                            <a href="" className="btn btn-danger"></a>
+                            <a href="" className="btn btn-warning">
+                                <i className="fa fa-twitter"></i>
+                            </a>
+                            <a href="" className="btn btn-danger">
+                                <i className="fa fa-tumbler"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
