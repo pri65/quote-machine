@@ -12,7 +12,6 @@ function App() {
         setQuotes(data);
         let ranIndex = Math.floor(Math.random() * data.length);
         setRandomQuote(data[ranIndex])
-        setColor(color[ranColorIndex ])
        }
        fetchData();
      },[])
@@ -37,6 +36,7 @@ function App() {
         let ranIndex = Math.floor(Math.random() * quotes.length);
         let ranColorIndex = Math.floor(Math.random() * colors.length)
         setRandomQuote(quotes[ranIndex])
+        setColor(colors[ranColorIndex ])
      }
 
     return (
