@@ -2,6 +2,7 @@ function App() {
 
     const [quotes,setQuotes] = React.useState([]);
     const [randomQuote,setRandomQuote] = React.useState("");
+    const [color,setColor] = React.useState("#fff");
 
      React.useEffect(() => {
        async function fetchData() {
